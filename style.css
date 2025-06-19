@@ -1,0 +1,71 @@
+/* Animación de escritura */
+.escritura {
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  overflow: hidden;
+  font-size: 1rem;
+  animation: escribir-borrar 10s steps(36) infinite, blink 0.7s step-end infinite;
+  color: white;
+}
+
+@keyframes escribir-borrar {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 36ch;
+  }
+  66% {
+    width: 36ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Ventana tipo terminal */
+.fondo {
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Barra superior con botones */
+.barra {
+  background-color: #2d2d2d;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Círculos estilo macOS */
+.circulo {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.rojo { background-color: #ff5f56; }
+.amarillo { background-color: #ffbd2e; }
+.verde { background-color: #27c93f; }
+
+/* Contenido del "editor" */
+.contenido {
+  padding: 1rem;
+  background-color: #1e1e1e;
+}
