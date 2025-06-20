@@ -3,28 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Sitio con Bootstrap</title>
+  <title>alediaz.xyz</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!--Estilos CSS-->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="fondo">
-    <div class="barra">
-      <span class="circulo rojo"></span>
-      <span class="circulo amarillo"></span>
-      <span class="circulo verde"></span>
-    </div>
-    <div class="contenido">
-      <span class="escritura">¡Hola Bienvenidx a alediaz.xyz! 👋</span>
-      <br>
-      <span class="escritura">Proyectos electrónicos avanzados 🤖</span>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- Columna izquierda -->
+      <div class="col-md-7 mb-4 mb-md-0">
+        <h2>
+          Un sitio web para entusiastas<br>
+          de la tecnología.
+        </h2>
+        <p>
+          Aquí encontrarás proyectos de electrónica avanzada, tutoriales <br>
+          y recursos para aprender y experimentar con tecnología.
+        </p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-primary">Proyectos</button>
+          <button class="btn btn-success">Contacto</button>
+        </div>
+      </div>
+
+      <!-- Columna derecha (terminal animada) -->
+      <div class="col-md-5">
+        <div class="fondo pb-4 w-100">
+          <div class="barra">
+            <span class="circulo rojo"></span>
+            <span class="circulo amarillo"></span>
+            <span class="circulo verde"></span>
+          </div>
+          <div class="contenido px-3">
+            <span class="escritura">¡Hola Bienvenidx a alediaz.xyz! 👋</span>
+            <br>
+            <span style="color:white; font-family: monospace;">Proyectos electrónicos avanzados 🤖</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  
+
+  <div class="container bg-light">
+    <p class="d-flex justify-content-center align-items-center fs-5">
+      ¡Sígueme en mis redes sociales para no perderte nada!
+    </p>
+    <!-- Carrusel tipo marquesina -->
+<div class="carousel-marcas bg-light">
+  <div class="slider">
+    <div class="slide-track">
+
+      <a href="https://www.instagram.com/alediaz.xyz" target="_blank" class="slide">
+        <i class="bi bi-instagram fs-2"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/alejandro-d%C3%ADaz-sastre-0b0a3b213/" target="_blank" class="slide">
+        <i class="bi bi-linkedin fs-2"></i>
+      </a>
+
+      <a href="https://youtube.com/@alediaz-xyz?si=v-C8IqQq1ccgI-zs" target="_blank" class="slide">
+        <i class="bi bi-youtube fs-2"></i>
+      </a>
+
+      <a href="https://github.com/alediaz-xyz" target="_blank" class="slide">
+        <i class="bi bi-github fs-2"></i>
+      </a>
+
+      <a href="https://www.facebook.com/alediaz.xyz" target="_blank" class="slide">
+        <i class="bi bi-facebook fs-2"></i>
+      </a>
+
+      <!-- Duplicamos para efecto continuo -->
+      <a href="https://www.instagram.com/alediaz.xyz" target="_blank" class="slide">
+        <i class="bi bi-instagram fs-2"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/alejandro-d%C3%ADaz-sastre-0b0a3b213/" target="_blank" class="slide">
+        <i class="bi bi-linkedin fs-2"></i>
+      </a>
+
+      <a href="https://youtube.com/@alediaz-xyz?si=v-C8IqQq1ccgI-zs" target="_blank" class="slide">
+        <i class="bi bi-youtube fs-2"></i>
+      </a>
+
+      <a href="https://github.com/alediaz-xyz" target="_blank" class="slide">
+        <i class="bi bi-github fs-2"></i>
+      </a>
+
+      <a href="https://www.facebook.com/alediaz.xyz" target="_blank" class="slide">
+        <i class="bi bi-facebook fs-2"></i>
+      </a>
+
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <h2 class="text-center mb-5">
+    ¿Qué encontrarás en este blog?
+  </h2>
+  <div class="row align-items-center ">
+    <!--Primera columna-->
+    <div class="col-md-4 mb-4">
+      <div class=" h-100">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-bar-chart fs-2"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="d-flex justify-content-center">Análisis de datos</h5>
+          <p class="text-center">Aprende a programar en Python desde cero con ejemplos prácticos y proyectos interesantes.</p>
+        </div>
+      </div>
+    </div>
+    <!--Segunda columna-->
+    <div class="col-md-4 mb-4">
+      <div class=" h-100">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-cpu fs-2"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="d-flex justify-content-center">Electrónica</h5>
+          <p class="text-center">Aprende a programar en Python desde cero con ejemplos prácticos y proyectos interesantes.</p>
+        </div>
+      </div>
+    </div>
+    <!--Segunda columna-->
+    <div class="col-md-4 mb-4">
+      <div class=" h-100">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-window-stack fs-2"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="d-flex justify-content-center">Front-end</h5>
+          <p class="text-center">Aprende a programar en Python desde cero con ejemplos prácticos y proyectos interesantes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center mt-5">
+    <!--Primera columna-->
+    <div class="col-md-4 mb-4">
+      <div class=" h-100">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-robot fs-2"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="d-flex justify-content-center">Inteligencia Artificial</h5>
+          <p class="text-center">Aprende a programar en Python desde cero con ejemplos prácticos y proyectos interesantes.</p>
+        </div>
+      </div>
+    </div>
+    <!--Segunda columna-->
+    <div class="col-md-4 mb-4">
+      <div class="h-100">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-database fs-2"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="d-flex justify-content-center">Back-end</h5>
+          <p class="text-center">Aprende a programar en Python desde cero con ejemplos prácticos y proyectos interesantes.</p>
+        </div>
+      </div>
+    </div>
+    <!--Tercera columna-->
+    <div class="col-md-4 mb-4">
+      <div class="h-100">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-buildings fs-2"></i>
+        </div>
+        
+        <div class="card-body">
+          <h5 class="d-flex justify-content-center">Industria 4.0</h5>
+          <p class="text-center">Aprende a programar en Python desde cero con ejemplos prácticos y proyectos interesantes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
 
 
-
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
